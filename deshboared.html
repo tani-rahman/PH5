@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-100" >
+    <header class="mx-16 py-10">
+        <nav class="bg-white rounded-2xl h-[100px] flex items-center px-10 justify-between shadow-md">
+            <!-- Left section -->
+            <div class="flex justify-start space-x-3 items-center">
+                <img class="w-12 h-12" src="image/logo.png">
+                <h1 class="text-4xl font-light tracking-wide">
+                    Dev<span class="font-bold text-gray-900">Board</span>
+                </h1>
+            </div>
+    
+            <!-- Right section-->
+            <div class="ml-auto">
+                <button id="backToDeskBtn" class="px-5 py-2.5 bg-blue-600 rounded-lg ">
+                    <h1 class="text-white">Back to Desk</h1>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+        <!--Blogs section-->
+    <section class="mx-16 pb-8">
+        <div class="justify-items-center">
+            <h1 class="text-3xl tracking-wide font-bold text-gray-900">Blogs</h1>
+        </div>
+    </section >
+
+
+    <!--Questions section-->
+    <section class="mx-16 space-y-6 mb-20">
+        <div class="bg-white px-10 py-5">
+            <div class="border-dashed border-b-2 pb-5">
+                <h1 class="text-xl tracking-wide font-bold">Question-1: What are the different ways to select an element in the DOM?</h1>
+            </div>
+            <div class="pt-5">
+                <h1 class="text-lg opacity-75"><span  class=" text-xl font-bold "> There are several ways to select an element in the DOM : </span><br>
+                    <ul>
+                        <li>
+                            <span class="font-semibold">By ID -</span> document.getElementById()
+                        </li>
+                        <li>
+                            <span class="font-semibold">By Class Name -</span> document.getElementsByClassName()
+                        </li>
+                        <li>
+                            <span class="font-semibold">By Tag Name -</span> document.getElementsByTagName()
+                        </li>
+                        <li>
+                            <span class="font-semibold">By Name Attribute - </span>document.getElementsByName()
+                        </li>
+                    </ul>
+                </h1>
+            </div>
+        </div>
+
+        <div class="bg-white px-10 py-5">
+            <div class="border-dashed border-b-2 pb-5">
+                <h1 class="text-xl font-['Poppins'] tracking-wide font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+            </div>
+            <div class="pt-5">
+                <h1 class="text-lg opacity-75"><span class=" text-xl font-bold ">The key differences between innerHTML, innerText, and textContent is : </span><br>
+                    <ul>
+                        <li>
+                            <span class="font-semibold">innerHTML - </span> Retrieves or sets HTML content, including tags and nested elements.
+                        </li>
+                        <li>
+                            <span class="font-semibold">innerText -</span> Retrieves or sets the visible text of an element.
+                        </li>
+                        <li>
+                            <span class="font-semibold">textContent -</span> Retrieves or sets the entire text content, including hidden elements.
+                        </li>
+                    </ul>
+                </h1>
+            </div>
+        </div>
+
+        <div class="bg-white px-10 py-5">
+            <div class="border-dashed border-b-2 pb-5">
+                <h1 class="text-xl tracking-wide font-bold">Question-3: What is event delegation in the DOM?</h1>
+            </div>
+            <div class="pt-5">
+                <h1 class="text-lg opacity-75">Event delegation is a technique in JavaScript where a single event listener is attached to a parent element to manage events on multiple child elements, even those added dynamically.</h1>
+            </div>
+        </div>
+
+        <div class="bg-white px-10 py-5">
+            <div class="border-dashed border-b-2 pb-5">
+                <h1 class="text-xl tracking-wide font-bold">Question-4: What is event bubbling in the DOM?</h1>
+            </div>
+            <div class="pt-5">
+                <h1 class="text-lg opacity-75">The event starts at the target element and propagates upward to the root of the DOM.</h1>
+            </div>
+        </div>
+
+        <div class="bg-white px-10 py-5">
+            <div class="border-dashed border-b-2 pb-5">
+                <h1 class="text-xl tracking-wide font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            </div>
+            <div class="pt-5">
+                <h1 class="text-lg opacity-75">
+                    <ul>
+                        <li> <span class="font-bold"> Creating Elements - </span>Use document.createElement(tagName) to create an element. 
+                        </li>
+
+                        <li> <span class="font-bold"> Adding Elements to the DOM - </span>
+                            <li>
+                                Append as Last Child (appendChild).
+                            </li> 
+                            <li>
+                                Insert Before Another Element (insertBefore).
+                            </li>
+                            <li>
+                                Insert at a Specific Position (insertAdjacentHTML).
+                            </li>
+                        </li>
+
+                        <li> <span class="font-semibold"> Removing Elements - </span>Using removeChild(). 
+                        </li>
+                    </ul>
+                </h1>
+            </div>
+        </div>
+
+        
+
+    </section>
+    <script src="script/second.js"></script>
+</body>
+</html>
